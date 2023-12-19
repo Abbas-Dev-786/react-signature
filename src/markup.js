@@ -72,10 +72,8 @@ export const getHTML = (img) => {
             parties and supersedes all prior agreements and understandings,
             whether oral or written.
           </p>
-          <p>Executed on [Date].</p>
           <br />
           <img src=${img} alt="sign-img" />
-          <p>Chairperson Sign</p>
         </div>
       </div>
     
