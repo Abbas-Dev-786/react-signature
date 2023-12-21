@@ -1,14 +1,14 @@
-export const getHTML = (img) => {
-  return `
-    <div class="letter-container">
-      <div class="letterhead">
-        <img src="../public/vite.svg" alt="Company Logo" />
+const Document = ({ url }) => {
+  return (
+    <div className="letter-container">
+      <div className="letterhead">
+        <img src="./vite.svg" alt="Company Logo" />
         <h4>Company Name</h4>
         <p>123 Main Street, Cityville, State, 12345</p>
         <p>Email: info@company.com | Phone: (555) 555-5555</p>
       </div>
 
-      <div class="letter-content">
+      <div className="letter-content">
         <h2>Letter of Purchase</h2>
         <p>Date: January 1, 2023</p>
 
@@ -40,12 +40,23 @@ export const getHTML = (img) => {
 
         <p>Thank you for your continued partnership.</p>
 
-        <div class="signature">
+        <div className="signature">
           <p>Sincerely,</p>
           <p>John Doe</p>
-          <img src=${img} alt="sign-img" />
+          {url && <img src={url} alt="sign-img" />}
+          {!url && (
+            <button
+              className="btn btn-primary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Add Signature
+            </button>
+          )}
         </div>
       </div>
     </div>
-    `;
+  );
 };
+
+export default Document;

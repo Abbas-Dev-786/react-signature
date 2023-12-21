@@ -16,9 +16,9 @@ const SignPad = ({ setUrl }) => {
   return (
     <>
       <div>
-        <div style={{ border: "2px solid black", background: "#f6ede8" }}>
+        <div style={{ border: "1px solid #ccc", background: "#f6ede8" }}>
           <SignatureCanvas
-            canvasProps={{ width: 500, height: 200, className: "sigCanvas" }}
+            canvasProps={{ width: 470, height: 200, className: "sigCanvas" }}
             ref={(data) => setSign(data)}
           />
         </div>
