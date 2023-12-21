@@ -2,7 +2,7 @@ export const getHTML = (img) => {
   return `
     <div class="letter-container">
       <div class="letterhead">
-        <img src="../public/vite.svg" alt="Company Logo" />
+        <img src="./vite.svg" alt="Company Logo" />
         <h4>Company Name</h4>
         <p>123 Main Street, Cityville, State, 12345</p>
         <p>Email: info@company.com | Phone: (555) 555-5555</p>
